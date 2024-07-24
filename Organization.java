@@ -1,5 +1,5 @@
 public class Organization {
-    int a;
-    int b;
-    int c;
+    int Contact=6383909012;
+    String name="Akshaya";
+
 }
