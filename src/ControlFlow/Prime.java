@@ -3,17 +3,19 @@ package ControlFlow;
 public class Prime {
     public static void main(String[] args) {
         int i;
+        int j;
         int number = 484;
-        int count=0;
+
         for (i = 2; i < number; i++) {
-            if (count % i == 0) {
-                count++;
+            int count = 0;
+            for (j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    count++;
+                }
             }
-        }
-        if (count == 0) {
-            System.out.println("Prime number");
-        } else {
-            System.out.println("Not a prime");
+            if (count < 2) {
+                System.out.println(i);
+            }
         }
     }
 }
