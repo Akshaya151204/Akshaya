@@ -1,6 +1,6 @@
 package ControlFlow;
 
-public class Prime {
+public class Prime1 {
     public static void main(String[] args) {
         int i;
         int j;

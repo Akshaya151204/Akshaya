@@ -11,5 +11,5 @@ public class Factorial {
         System.out.println("Factorial of a given number:"+fact);
 
     }
-
 }
+
