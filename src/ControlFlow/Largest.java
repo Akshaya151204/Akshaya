@@ -6,8 +6,8 @@ public class Largest {
         int i;
         int j;
         int t;
-        for(i=0;i<=5;i++){
-            for(j=0;j<5;j++){
+        for(i=0;i<=4;i++){
+            for(j=0;j<4;j++){
                 t=a[i];
                 a[i]=a[j];
                 a[j]=t;
