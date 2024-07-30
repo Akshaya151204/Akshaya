@@ -8,14 +8,16 @@ public class Max {
         int t;
         for (i = 0; i <= 5; i++) {
             for (j = 0; j < 5; j++) {
-                t = a[i];
-                a[i] = a[j];
-                a[j] = t;
+                if (a[i] < a[j]) {
+                    t = a[i];
+                    a[i] = a[j];
+                    a[j] = t;
+                }
             }
         }
-        System.out.println("Largest:" + a[4]);
-        System.out.println("Smallest:" + a[3]);
-        System.out.println("Smallest:" + a[2]);
+        System.out.println("1st Max:" + a[a.length-1]);
+        System.out.println("2nd Max:" + a[a.length-2]);
+        System.out.println("3rd Max:" + a[a.length-3]);
     }
 }
 
