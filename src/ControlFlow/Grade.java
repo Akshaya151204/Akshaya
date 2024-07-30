@@ -7,7 +7,7 @@ public class Grade {
             System.out.println("Grade A");
         } else if (mark <= 400 && mark > 300) {
             System.out.println("Grade B");
-        } else if (mark >= 300 && mark < 200) {
+        } else if (mark <= 300 && mark > 200) {
             System.out.println("Grade C");
         } else {
             System.out.println("FAIL");
