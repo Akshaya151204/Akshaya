@@ -1,4 +1,4 @@
-package NewTask1;
+package src.ArrayTask;
 
 public class Occ {
     public static void main(String[] args) {
