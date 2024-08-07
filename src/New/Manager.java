@@ -1,15 +1,10 @@
 package New;
 
-public class Manager{
-    public String name;
-    public int salary;
+public class Manager extends Employee{
     public String department;
-    
-    public Manager(String name, int salary, String dept) {
-            this.name = name;
-            this.salary = salary;
-            this.department = dept;
-            System.out.println("Manager Details:");
+    Manager(String name, int salary, String dept) {
+        super(name,salary);
+        this.department=dept;
 
         }
     }
