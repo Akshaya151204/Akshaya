@@ -10,9 +10,9 @@ public class Division1 {
         System.out.println("Enter A & B");
 
         try {
-            int a = divisor.nextInt();
-            int b = divisor.nextInt();
-            System.out.println(a / b);
+            int divident = divisor.nextInt();
+            int divisor = divisor.nextInt();
+            System.out.println(divident / divisor);
         } catch (ArithmeticException e) {
             System.out.println("Cannot divide by zero" + e);
         } catch (InputMismatchException ee) {
