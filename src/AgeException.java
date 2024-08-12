@@ -1,22 +1,27 @@
-package src;
+package Exception;
+
+import java.util.Scanner;
+
 public class AgeException extends Exception{
-    AgeException(int Age){
+    AgeException(){
         super("Invalid Age");
     }
-    static void ValidAge(int Age) {
+    public static void ValidAge(int Age) {
         System.out.println("Valid Age");
     }
 
     public static void main(String[] args) {
-
-        int Age=120;
+        AgeException ageException=new AgeException();
         try {
+            Scanner scanner=new Scanner(System.in);
+            System.out.println("Enter A Number:");
+            int Age= scanner.nextInt();
             if (Age < 0 || Age > 120) {
-                throw new AgeException(Age);
+                throw new AgeException();
             }
             ValidAge(Age);
         }catch (AgeException e){
             System.out.println(e.getMessage());
-        }
+    }
     }
 }
