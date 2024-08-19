@@ -19,7 +19,7 @@ public class Distance {
         }
     }
 
-    public int Distances(String names) {
+    public int distances(String names) {
         int distance = 0;
         switch (names) {
             case "A":
