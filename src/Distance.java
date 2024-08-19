@@ -22,19 +22,19 @@ public class Distance {
     public int distances(String names) {
         int distance = 0;
         switch (names) {
-            case "A":
+            case "a":
                 distance = this.Person1Distance;
                 break;
-            case "B":
+            case "b":
                 distance = this.Person2Distance;
                 break;
-            case "C":
+            case "c":
                 distance = this.Person3Distance;
                 break;
-            case "D":
+            case "d":
                 distance = this.Person4Distance;
                 break;
-            case "E":
+            case "e":
                 distance = this.Person5Distance;
                 break;
             default:
