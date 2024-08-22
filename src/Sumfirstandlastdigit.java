@@ -7,18 +7,21 @@ public class Sumfirstandlastdigit {
         int last;
         int sum=0;
         int numberTemp = number;
+        if(number>0 && number<10){
+            sum=number+number;
+            return sum;
+        }
         if (number < 0) {
             return -1;
         }
-        if(number>0 && number<10){
-            sum=number+number;
-        }
-            while (number > 10) {
+
+            while (number >= 10) {
                 number /= 10;
             }
                 last = numberTemp % 10;
                 sum=number+last;
                 return sum;
+
     }
 
         public static void main(String[] args) {
