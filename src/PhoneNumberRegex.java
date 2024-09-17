@@ -11,16 +11,18 @@ public class PhoneNumberRegex {
             String phoneRegex = "\\(\\+\\d{2}\\)\\s\\d{5}-\\d{5} | \\d{3}-\\d{3}-\\d{4}";
             Pattern pattern = Pattern.compile(phoneRegex);
             Matcher matcher = pattern.matcher(text);
-            String result = "";
-            while (matcher.find()) {
-                result = result + matcher.group() + " or ";
+            StringBuilder result = new StringBuilder();
+        while (matcher.find()) {
+            if (!result.isEmpty()) {
+                result.append(" or ");
             }
-            if (result != "")
-                return result;
-            else
-                return "null";
+            result.append(matcher.group());
         }
-
+        if (!result.isEmpty()) {
+            return result.toString();
+        } else
+            return "null";
+    }
         public static void main(String[] args) {
 
             System.out.println(extractPhoneNumbers("Call me at (+91) 23456-72890 or at 987-424-4124"));
