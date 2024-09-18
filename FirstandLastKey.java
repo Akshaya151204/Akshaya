@@ -9,10 +9,10 @@ public class FirstandLastKey {
         treeKeyMap.put(1,"Orange");
         System.out.println("Treemap:"+treeKeyMap);
         Integer firstKey=treeKeyMap.firstKey();
-        String firstValue=treeKeyMap.get(firstKey);
-        System.out.println("First Key: "+firstKey+",Value: "+firstValue);
+        
+        System.out.println("First Key: "+firstKey);
         Integer lastKey=treeKeyMap.lastKey();
-        String lastValue=treeKeyMap.get(lastKey);
-        System.out.println("Last Key: "+lastKey+",Value: "+lastValue);
+       
+        System.out.println("Last Key: "+lastKey);
     }
 }
