@@ -5,11 +5,11 @@ import java.util.Scanner;
 
 public class Distance {
     char start, end;
-    int Person1Distance = 1;
-    int Person2Distance = 3;
-    int Person3Distance = 5;
-    int Person4Distance = 7;
-    int Person5Distance = 9;
+    int person1distance = 1;
+    int person2distance = 3;
+    int person3distance = 5;
+    int person4distance = 7;
+    int person5distance = 9;
 
     public int calculateDifference(int Distance1, int distance2) {
         if (Distance1 >= distance2) {
@@ -19,22 +19,22 @@ public class Distance {
         }
     }
 
-    public int Distances(String names) {
+    public int distances(String names) {
         int distance = 0;
         switch (names) {
-            case "A":
+            case "a":
                 distance = this.Person1Distance;
                 break;
-            case "B":
+            case "b":
                 distance = this.Person2Distance;
                 break;
-            case "C":
+            case "c":
                 distance = this.Person3Distance;
                 break;
-            case "D":
+            case "d":
                 distance = this.Person4Distance;
                 break;
-            case "E":
+            case "e":
                 distance = this.Person5Distance;
                 break;
             default:

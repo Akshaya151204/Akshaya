@@ -6,10 +6,10 @@ public class Division {
     public static void main(String[] args) {
         Scanner divisor = new Scanner(System.in);
         System.out.println("Enter A & B");
-        int a=divisor.nextInt();
-        int b=divisor.nextInt();
+        int divident=divisor.nextInt();
+        int divisor=divisor.nextInt();
         try{
-            System.out.println(a/b);
+            System.out.println(divident/divisor);
         }catch (ArithmeticException e){
             System.out.println("Cannot divide by zero"+e);
         }
