@@ -9,10 +9,10 @@ public class Employee1 {
         public String gender;
         public String emailAddress;
         public String phoneNumber;
-        public String address;
+        public Address address;
         public Employee1(String employeeId, String firstName, String lastName,
                          String middleName, String dateOfBirth, String gender,
-                         String emailAddress, String phoneNumber, String address) {
+                         String emailAddress, String phoneNumber, Address address) {
             this.employeeId = employeeId;
             this.firstName = firstName;
             this.lastName = lastName;
@@ -38,8 +38,9 @@ public class Employee1 {
         }
 
         public static void main(String[] args) {
+            Address address1=new Address("Plot No 7, Annamalai nagar","Near indra nagar","Kanchipuram","Tamil Nadu","631502");
             Employee1 employee=new Employee1("1234","A","Amuthan","Akshaya",
-                    "15/12/2004","Female","akshaya151204@gmail.com","6383909012","Kanchipuram");
+                    "15/12/2004","Female","akshaya151204@gmail.com","6383909012",address1);
             System.out.println(employee);
         }
     }
