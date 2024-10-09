@@ -8,7 +8,6 @@ public class Test1 {
         this.firstName = firstName;
         this.lastName = lastName;
     }
-
     public static void main(String[] args) {
         Test1 test = new Test1("Akshaya", "Amuthan");
         System.out.println(test);
