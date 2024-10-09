@@ -14,6 +14,7 @@ public class Employee1 {
                          String middleName, String dateOfBirth, String gender,
                          String emailAddress, String phoneNumber, Address address) {
             this.employeeId = employeeId;
+
             this.firstName = firstName;
             this.lastName = lastName;
             this.middleName = middleName;
