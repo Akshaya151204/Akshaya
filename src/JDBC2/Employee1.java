@@ -57,27 +57,6 @@ public class Employee1 {
 
     String performanceReviews;
 
-    @Override
-    public String toString() {
-        return
-                "jobTitle=" + jobTitle + '\n' +
-                        "department=" + department + '\n' +
-                        "managerID=" + managerID + '\n' +
-                        "employmentStatus=" + employmentStatus + '\n' +
-                        "salary=" + salary + '\n' +
-                        "workLocation=" + workLocation + '\n' +
-                        "panNumber=" + panNumber + '\n' +
-                        "aadhaarNumber=" + aadhaarNumber + '\n' +
-                        "bankAccountDetails=" + bankAccountDetails + '\n' +
-                        "employmentEligibilityVerification=" + employmentEligibilityVerification + '\n' +
-                        "backgroundStatus=" + backgroundStatus + '\n' +
-                        "emergencyContact=" + emergencyContact + '\n' +
-                        "skills=" + skills + '\n' +
-                        "education=" + education + '\n' +
-                        "certifications=" + certifications + '\n' +
-                        "performanceReviews=" + performanceReviews + '\n' ;
-    }
-
     public static void main(String[] args) {
         Employee1 employee1=new Employee1("Employee","Application","CI3005","FullTime","50000",
                 "Medavakkam","Verification Done","Verification done","9382827282","Painting",
